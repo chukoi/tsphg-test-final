@@ -6,11 +6,8 @@ My implementation of the tsphg test. It is functional but I need to make some im
 
 * Add design and make it responsive.
 * Use Redux where setState is called. This would take time to set up all the action creators and reducers.
-* Probably no use material-ui components as they interact with weird behaviours.
+* Probably not use material-ui components as they interact with weird behaviours.
 * Need to figure out a way to set the required and disabled fields through the schema. I do not want to manually traverse the tree. Maybe make use of the underscore library.
-
-After creation, your project should look like this:
-
 
 ## How to build
 
@@ -26,7 +23,7 @@ To build the modules just run from the root directory:
 
 To start that application just use:
 
-    yarn state
+    yarn statt
     
 This should automatically open the application in your default browser. However you can always access from:
 

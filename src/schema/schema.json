@@ -1,0 +1,91 @@
+[
+  {
+    "type": "textfield",
+    "label": "Name",
+    "name": "name",
+    "placeholder": "Enter your name.",
+    "required": true,
+    "validations": [
+      {
+        "test": "(function(value) {return !value;})",
+        "errorMessage": "You must provide your full name."
+      },
+      {
+        "test": "(function(value) {const names = value.split(' '); if (names.length === 2) { return !names[1] } else { return names.length != 2;}})",
+        "errorMessage": "You must provide your first and last name."
+      }
+    ]
+  },
+  {
+    "type": "datepicker",
+    "label": "Date of Birth",
+    "name": "dob",
+    "placeholder": "Enter your Date of Birth",
+    "required": true,
+    "validations": [
+      {
+        "test": "(function(dob) {let today = new Date(); let age = today.getFullYear() - dob.getFullYear(); var m = today.getMonth() - dob.getMonth(); if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) age--; return age < 18; })",
+        "errorMessage": "You must be older than 18 years."
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "label": "Gender",
+    "name": "gender",
+    "defaultValue": "",
+    "options": [
+      "Male", "Female"
+    ]
+  },
+  {
+    "type": "fieldset",
+    "label": "Contact",
+    "name": "contact",
+    "items": [
+      {
+        "type": "textfield",
+        "label": "Mobile",
+        "name": "mobile",
+        "parent": "contact"
+      },
+      {
+        "type": "textfield",
+        "label": "Home",
+        "name": "home",
+        "parent": "contact"
+      }
+    ]
+  },
+  {
+    "type": "toggle",
+    "requiredByToggle": {
+      "guardian_name": true,
+      "guardian_contact": true
+    },
+    "label": "Guardian Consent",
+    "name:": "guardian",
+    "items": [
+      {
+        "type": "fieldset",
+        "label": "Guardian",
+        "items": [
+          {
+            "type": "textfield",
+            "label": "Name",
+            "name": "guardian_name",
+            "parent": "guardian",
+            "disabled": true
+          },
+          {
+            "type": "textfield",
+            "label": "Contact",
+            "name": "guardian_contact",
+            "parent": "guardian",
+            "disabled": true
+          }
+        ]
+      }
+    ]
+  }
+]

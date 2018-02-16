@@ -50,7 +50,7 @@ class Form extends Component {
   }
 
   /**
-   * Get the manifest file top build the dynamic form.
+   * Get the manifest file to build the dynamic form.
    *
    * @return {null}
    */
@@ -308,9 +308,7 @@ class Form extends Component {
 }
 
 /**
- * Setup the actions to update the state to the props
- *
- * @return {object}
+ * Setup the actions to update set state to the props
  */
 const
   mapStateToProps = (state) => {

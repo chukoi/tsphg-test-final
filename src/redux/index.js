@@ -9,7 +9,7 @@
 import {combineReducers} from 'redux';
 import schema from './schema';
 
-// cCombine reducers.
+// Combine reducers.
 export default combineReducers({
   schema
 });

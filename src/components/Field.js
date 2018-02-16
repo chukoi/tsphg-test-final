@@ -20,7 +20,7 @@ export default class Field extends Component {
    * Render a field based on its type
    *
    * @param {object} field
-   * @index {number} index to used for repeated component keys.
+   * @param {number} index to used for repeated component keys.
    * @return {*} The field.
    */
   renderField(field, index) {

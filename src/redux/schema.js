@@ -17,9 +17,9 @@ const initialState = {
 /**
  * Send the schema back to build the form.
  *
- * @param {*} state
+ * @param {object} state
  * @param {object} action
- * @return {*} updated state
+ * @return {object} updated state
  */
 export default function schema(state = initialState, action) {
   switch (action.type) {

@@ -26,10 +26,10 @@ To build the modules just run from the root directory:
 
 To start that application just use:
 
-    yarn statr
+    yarn state
     
 This should automatically open the application in your default browser. However you can always access from:
 
-    http://localhost:3030
+    http://localhost:3000
 
 [Application](http:/localhost:3000)

@@ -23,7 +23,7 @@ To build the modules just run from the root directory:
 
 To start that application just use:
 
-    yarn statt
+    yarn start
     
 This should automatically open the application in your default browser. However you can always access from:
 
